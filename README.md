@@ -1,5 +1,5 @@
 # henna.nvim
-Henna theme loosy ported to neovim using [tjdevries/colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim)
+[Henna](https://github.com/httpsterio/vscode-henna) theme for VSCode loosy ported to neovim using [tjdevries/colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim)
 
 ![screenshot of neovim with theme applied](./media/henna.nvim.png)
 
