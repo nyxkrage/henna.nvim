@@ -23,28 +23,32 @@ Color.new('lightgray', 	'#9da5b4')
 Color.new('white',     	'#f8f8f0')
 
 -- Nvim Groups
-Group.new('CursorColumn', groups.CursorLine, groups.CursorLine, groups.CursorLine)
-Group.new('CursorLine', nil, colors.darkgray, nil)
-Group.new('DiagnosticError', groups.Error, groups.Error, groups.Error)
+Group.new('Info', colors.silver, colors.background, nil)
 Group.new('DiagnosticInfo', groups.Info, groups.Info, groups.Info)
+Group.new('Warn', colors.black, colors.yellow, styles.bold)
 Group.new('DiagnosticWarn', groups.Warn, groups.Warn, groups.Warn)
+Group.new('Error', colors.white, colors.red, styles.bold)
+Group.new('ErrorMsg', groups.Error, groups.Error, groups.Error)
+Group.new('DiagnosticError', groups.Error, groups.Error, groups.Error)
+Group.new('NvimInternalError', groups.Error, groups.Error, groups.Error)
+
+Group.new('CursorLine', nil, colors.darkgray, nil)
+Group.new('CursorColumn', groups.CursorLine, groups.CursorLine, groups.CursorLine)
+
+
 Group.new('DiffAdd', colors.green, nil, nil)
 Group.new('DiffChange', colors.silver, nil, nil)
 Group.new('DiffDelete', colors.maroon, nil, nil)
 Group.new('Directory', colors.olive, nil, nil)
-Group.new('Error', colors.white, colors.red, styles.bold)
-Group.new('ErrorMsg', groups.Error, groups.Error, groups.Error)
-Group.new('Info', colors.silver, colors.background, nil)
 Group.new('LineNr', colors.yellow, nil, nil)
 Group.new('LineNrAbove', colors.silver, nil, nil)
 Group.new('LineNrBelow', groups.LineNrAbove, nil, nil)
-Group.new('NvimInternalError', groups.Error, groups.Error, groups.Error)
 Group.new('PMenuSel', colors.black, colors.lime, nil)
-Group.new('Search', nil, colors.green, nil)
 Group.new('StatusLine', nil, colors.red, nil)
 Group.new('StatusLineNC', nil, colors.black, nil)
 Group.new('VertSplit', colors.white, nil, nil)
-Group.new('Warn', colors.black, colors.yellow, styles.bold)
+
+Group.new('Search', nil, colors.green, nil)
 Group.new('WildMenu', groups.Search, groups.Search, groups.Search)
 
 -- Treesitter syntax stuff
